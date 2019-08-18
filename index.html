@@ -1,68 +1,146 @@
 <html>
-	<head>
-		<title>Mi primera página</title>
-	</head>
-	<body>
-		<h1>Mi página</h1>
-		<div class="topnav">
-		<a  href="#p1">Página de bienvenida</a>
-		<a  href="#p2">Datos Biográficos</a>
-		<a href="#p3">Experiencia</a>
-		<a href="#p4">Material de interes</a>
-		</div>
-		<h1 id="p1">Titulo:Pagina de Bienvenida</h1>
-		<h2>Descripción: Bienvenidos a mi página</h2>
-		<h4>Contenido: Espero que disfruten de mi página</h4>
-		<img src="https://i.etsystatic.com/8554734/d/il/8c7df1/1655467807/il_340x270.1655467807_slt0.jpg?version=0">
-		<h1 id="p2">Titulo: Datos biográficos</h1>
-		<h2>Descripcion: Datos mios<h2>
-		<table style="width:100%">
-  <tr>
-    <th>Nombres</th>
-    <th>Apellidos</th> 
-    <th>Edad</th>
-	<th>Fecha de nacimiento</th>
-  </tr>
-  <tr>
-    <td>Jose Dario</td>
-    <td>Florez Gomez</td> 
-    <td>19</td>
-	<th>09/09/1999</th>
-  </tr>
 
-</table>
-		<h1 id="p3">Titulo: Experiencia</h1>
-		<h2>Descripción: Lo que he hecho con mi vida</h2>
-		<ol>
-		<li><h3>Experiencia de estudios<h3></li>
-		<ul>
-		<li><h4>Estudiante de matematicas e ingenieria de sistemas en la Universidad de los Andes</h4></li>
-		<li><h4>Bachillerato en el colegio de la Universidad libre<h4></li>
-		</ul>
-		<li><h3>Experiencia laboral<h3></li>
-		<ul>
-		<li><h4>Tutor de cupitaller</h4></li>
-		</ul>
-		</ol>
-		<h1 id="p4">Material de interes</h1>
-		<ul>
-		<li><h4>Videos favoritos</h4></li>
-		<video widrh= "480" controls>
-		<source src="https://www.youtube.com/watch?v=lpvT-Fciu-4" type="video/mp4">
-		Tu navegador no admite el video.
-		</video>
-		<video widrh= "480" controls>
-		<source src="https://www.youtube.com/watch?v=Q0ajM7aL-Vc" type="video/mp4">
-		Tu navegador no admite el video.
-		</video>
-		<li><h4>Enlaces de interes:<h4></li>
-		<br><a href="https://uniandes.edu.co/"> Página de la universidad
-		</a></br>
-		<br><a href="https://residia.co/"> Página de un emprendimiento en el que hago parte</a>
-		
-		<li><h4>Imagenes:</h4></li>
-		<img src="https://www.hola.com/imagenes/estar-bien/20180831128704/ronroneo-gatos-causas/0-595-638/gato-ronroneo-1-m.jpg?filter=w500&filter=ds75">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Goldbach-1000000.png/300px-Goldbach-1000000.png">
-	</ul></br>
-	</body>
+<head>
+    <title>My first page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body background="fondo.jpeg">
+    <div>
+        <img class="banner" src="banner.jpeg" style="width:100%" height="400">
+    </div>
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col-6 col-lg-6 col-md-12">
+                <div class="row">
+                    <h1>Index:</h1>
+                </div>
+                <div class="row">
+                    <div class="topnav">
+                        <ul>
+                            <li class="primera_lista"><a href="#p2">Biography</a></li>
+                            <li class="primera_lista"><a href="#p3">Experience</a></li>
+                            <li class="primera_lista"><a href="#p4">Interests</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-12">
+                <h1 id="p2">Biography</h1>
+                <h2>About me:</h2>
+                <table class="table" style="width:100%">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last name</th>
+                        <th>Age</th>
+                        <th>Birth date</th>
+                    </tr>
+                    <tr>
+                        <td>Jose Dario</td>
+                        <td>Florez Gomez</td>
+                        <td>19</td>
+                        <td>09/09/1999</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <ol>
+            <h1 id="p3">My achievements</h1>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-lg-6">
+                    <li>
+                        <h3>Study experience<h3>
+                    </li>
+                    <ul>
+                        <br>
+                        <li>
+                            Math and system engineering student from Universidad de los andes
+                        </li></br>
+                        <br>
+                        <li>
+                            Middleschool and highschool on Colegio de la Universidad Libre
+                        </li><br>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-6">
+                    <li>
+                        <h3>Working experience</h3>
+                    </li>
+                    <ul>
+                        <br>
+                        <li>
+                            Cupitaller's tutor
+                        </li></br>
+                    </ul>
+                    <li>
+                        <h3>My projects</h3>
+                    </li>
+                    <ul>
+                        <li class="primera_lista">
+                            <a href="https://residia.co">Residia </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </ol>
+        <h1 id="p4">Interests</h1>
+        <ul>
+            <li>
+                <h3>Favourite videos</h3>
+            </li>
+            <div class="row">
+                <div class="col-12 col-lg-6 col-sm-12">
+                    <video controls>
+                        <source src="https://www.youtube.com/watch?v=lpvT-Fciu-4" type="video/mp4">
+                        Your browser doesn't support the video
+                    </video>
+                </div>
+                <div class="col-12 col-lg-6 col-sm-12">
+                    <video controls>
+                        <source src="https://www.youtube.com/watch?v=Q0ajM7aL-Vc" type="video/mp4">
+                        Your browser doesn't support the video
+                    </video>
+                </div>
+            </div>
+            <li>
+                <h3>Links of interest<h3>
+            </li>
+            <div class="hypervinculo"><a href="https://github.com/Enguenye"> My github profile
+                </a></div>
+            <div class="hypervinculo"><a href="https://www.linkedin.com/in/jos%C3%A9-dar%C3%ADo-fl%C3%B3rez-g%C3%B3mez-a50427180/"> My Linkedin profile</a></div>
+            <li>
+                <h3>Images of my cats:</h3>
+            </li>
+            <img src="Enguenye.jpeg" alt="An image of my cat whose name is Enguenye" height="400" width="400">
+            <img src="Garcia.jpeg" alt="An image of my cat whose name is Garcia" height="400" width="400">
+            <img src="Rapunzel.jpeg" alt="An image of my cat whose name is Rapunzel" height="400" width="400">
+            <li>
+                <h3>Songs that I like</h3>
+            </li>
+            <audio controls>
+                <source src="EOT.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio controls>
+                <source src="TheTrooper.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </ul></br>
+    </div>
+    <footer>
+        <table class="table table-dark table-striped" style="width:100%">
+            <tr>
+                <td>Page by: Jose Dario Florez</td>
+            </tr>
+            <tr>
+                <td>Contact information: jd.florezg1@uniandes.edu.co</td>
+            </tr>
+            <tr>
+                <td>Other mail: jose-dario99@hotmail.com</td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
 </html>
