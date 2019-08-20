@@ -13,14 +13,13 @@ th{
 }
 
 .primera_lista{
-	color:blue;
+	color:#0209A9;
 	font-size:15pt;
 	font-weight: bold;
 }
 .banner{
 	position:relative;
 	margin-top:0em;
-	margin-bottom:7em;
 }
 video{
 	margin-top:5pt;
@@ -38,5 +37,9 @@ video{
 
 img{
 	margin-top:4pt;
+}
+
+body{
+	background-color:#21ABAB;
 }
 
